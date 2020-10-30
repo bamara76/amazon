@@ -21,12 +21,88 @@ body{
 
 .header{
     grid-area: header;
+    background-color: #203040;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 .main{
     grid-area: main;
 }
+.brand a{
+    color:white;
+    font-size:  2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header-links a{
+    color:white;
+    text-decoration: none;
 
+}
+.header-links a:hover{
+    color:orange;
+    text-decoration: none;
+
+}
 .footer{
     grid-area: footer;
+    background-color: #203040;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: #ff8000;
+}
+
+/* Home Screen */
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+.products li {
+    list-style: none;
+    padding: 0;
+    flex: 0 1 34rem;
+    margin: 1rem;
+    height: 50rem;
+    border-bottom: .1rem #c0c0c0 solid;
+
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.product-name{
+    font-size:  2rem;
+    font-weight: bold;
+}
+.product-image {
+    max-width: 34rem;
+    max-height: 34rem;
+}
+.product-brand{
+    font-size:  1.2rem;
+    color: grey;
+
+}
+
+.product-price{
+    font-size:  2rem;
+    font-weight: bold;
 }
