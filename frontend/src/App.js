@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import data from'./data';
-import {BrowserRouter,Route } from 'react-router-dom';
+import data from './data';
+import {BrowserRouter,Link,Route } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import HomeScreen from './Screens/HomeScreen';
@@ -27,19 +27,14 @@ function App() {
   return (
     <BrowserRouter>
 
-  
- 
-    
-
-
-
 <div className="grid-container">
 <header className="header">
   <div className="brand">
     <button onClick={openMenu}>
       &#9776;
     </button>
-    <a href="index.html">amazona</a>
+    <Link to="/">amazona</Link>
+
   </div>
   <div className="header-links">
     <a href="cart.html">Cart</a>
@@ -65,22 +60,7 @@ function App() {
   <Route path="/product/:id" component={ProductScreen} />
 
     <Route path="/" exact={true} component={HomeScreen} />
-    <ul className="products">
-      {
-        data.products.map(product =>
-        <li>
-          <div className="product">
-          <img className="product-image" src={product.image} alt="product" />
-          <div className="product-name">
-            <a href="product.html">{product.name}</a>
-          </div>
-          <div className="product-brand">{product.brand}</div>
-          <div className="product-price">{product.price}</div>
-          <div className="product-rating">{product.rating} {product.numReviews}</div>
-          </div>
-      </li>)
-    }
-    </ul>
+    
   </div>
 
 </main>
