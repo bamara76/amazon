@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
-import data from './data';
 import {BrowserRouter,Link,Route } from 'react-router-dom';
 import './App.css';
 import './index.css';
@@ -20,10 +18,9 @@ function App() {
 
   const closeMenu = () =>{
 
-  function closeMenu() {
-    document.querySelector(".sidebar").classList.remove("open")
+          document.querySelector(".sidebar").classList.remove("open")
   }
-}
+
   return (
     <BrowserRouter>
 
